@@ -284,6 +284,14 @@ a {
 
 
 /* start of media queries */ 
+@media screen and (max-width: 768px){
+  .navbar__navlink{
+    font-size: 23px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
     h1 {
       font-size: 2.5rem;
@@ -317,7 +325,7 @@ a {
     }
   
     .navbar__navlink {
-      padding: 0.5rem 1rem;
+      padding: 0.3rem 1rem;
     }
   
     .section__text {
