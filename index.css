@@ -96,7 +96,8 @@ a {
 }
 
 .navbar__navlink:hover{
-    color: #1f2430;
+    color: #cdd4e2;
+    border-bottom: 2px solid #cdd4e2;
 }
   
 .navbar__toggler {
@@ -188,6 +189,7 @@ a {
     position: absolute;
     margin-left: 45%;
     color: white;
+    cursor: pointer;
     width: 4%;
     bottom: 10%;
     animation: bounce 0.6s ease-in-out alternate infinite;
