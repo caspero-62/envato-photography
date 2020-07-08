@@ -1,16 +1,7 @@
-const scrollTrigger = () => {
-    let elements = document.getElementsByClassName('work');
-    for (element of elements) {
-        let pos = element.getBoundingClientRect().top;
-        if (pos < window.innerHeight) {
-            element.classList.add('transition');
-        } else {
-            null
-        }
-    }
-}
-
-window.addEventListener('scroll', scrollTrigger);
+const script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
 
 // set up text to print, each item in array is new line
 const aText =["We craft beautiful experiences that are worth sharing"];
@@ -50,4 +41,22 @@ function typewriter() {
     
     
 typewriter();
+
+const scrollTrigger = () => {
+    let elements = document.getElementsByClassName('work');
+    for (element of elements) {
+        let pos = element.getBoundingClientRect().top;
+        if (pos < window.innerHeight) {
+            element.classList.add('transition');
+        } else {
+            null
+        }
+    }
+}
+
+window.addEventListener('scroll', scrollTrigger);    
+
+$(window).on('load', function() {
+    $(window).scrollTop(0);
+});
     
